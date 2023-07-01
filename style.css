@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@700&display=swap");
+
+.body{
+    background: rgb(42, 41, 41);
+    background-image: url(bg.jpg);
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+.welcome{
+    font-size: 50px;
+    /* font-style: ; */
+    /* margin: 100px 0px 0px px; */
+    position: relative;
+    -webkit-text-stroke: 0.3vh #329d52;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 0px ;
+}
+.welcome::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vh red;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+    padding: 0px 0px 0px 0px ;
+}
+@keyframes animate{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 30%;
+    }
+}
+.con1{ 
+    /* background-color: red; */
+}
+.navbar{
+    width: auto;
+    /* float: right; */
+}
+.item{
+    margin: 0% 20% 0% 20% ;
+    color: whitesmoke;
+}
+.item:hover{
+    /* margin: 0px 0px 0px 0px ; */
+    color: wheat;
+    text-decoration: overline;
+    /* text-overflow: ellipsis; */
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    /* margin: 50px 1050px 0px 0px ; */
+    /* float: left; */
+}
+.logo:hover{
+    border: 2px solid whitesmoke;
+    
+}
+.mail{
+    margin: 0px 30px 0px 0px ;
+    text-decoration: none;
+}
+.git{
+    margin: 0px 30px 0px 0px ;
+    text-decoration: none;
+}
+.linkedin{
+    margin: 0px 30px 0px 0px ;
+    text-decoration: none;
+}
+.con2{
+    width: 50%; 
+    float: left;
+    /* background-color: yellowgreen; */
+    margin: 11% 0px 0px 12% ;
+} 
+.bio{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 90%;
+    text-align: justify;
+    /* margin: 0px 0px 0px 10px; */
+}
+.tag{
+    color: wheat;
+    font-family: monospace;
+    margin: 0px 0px 0px 2px;
+}
+.side2{
+    float: left;
+    color: white;
+    /* background-color: blue; */
+    margin: 13% 0px 0px 100px ;
+    border-top: 5px solid yellow;
+    border-left: 5px solid yellow;
+    padding: 20px 20px 20px 30px;
+}
+.project{
+    /* font-size: 30px; */
+}
+.projecttitle{
+    font-size: 30px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.projectitem{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: initial
+}
+.projectitem:hover{
+    color: silver;
+    
+}
+
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1rem 2rem; 
+    margin: 2% 0% 0% 0%;
+    /* background: #cfd8dc;  */
+  }
+  
+  nav ul {
+    display: flex; 
+    list-style: none; 
+  }
+  
+  nav li {
+    padding-left: 1rem;
+  }
+
+  .list{
+    margin: 0% 10% 0% 0%;
+  }
