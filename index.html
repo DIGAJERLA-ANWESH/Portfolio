@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="images/x-icon" href="photos/imgonline-com-ua-ReplaceColor-snT3ceC7LgfxS6.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  
+  <script>
+    function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+  </script>
+  <body>
+    <nav id="desktop-nav">
+        <div class="nav-logo">
+            <img class="ad-logo" src="photos/ad-removebg-preview.png">
+            <div class="logo">Anwesh Digajerla</div>
+        </div>
+      
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Education</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="nav-logo">
+            <img class="ad-logo" src="photos/ad-removebg-preview.png">
+            <div class="logo">Anwesh Digajerla</div>
+        </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="photos/developer.avif" alt="Anwesh Digajerla profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"><p class="anwesh">Anwesh Digajerla</p></h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <p class="section__text__p3">
+            "Crafting Web Experiences with Curiosity and Confidence"
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('photos/ANWESH_DIGAJERLA.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="photos/linkedin-icon_488108-5-removebg-preview.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="photos/github_PNG20.png"
+            alt="My Github profile"
+            class="icon git"
+            onclick="location.href='https://github.com/'"
+          />
+          <img
+            src="photos/hackerrank.png"
+            alt="My Hackerrank profile"
+            class="icon hackerrank"
+            onclick="location.href='https://www.hackerrank.com/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Explore Further</p>
+      <div class="edu-title">
+        <img class="edu-logo" src="photos/edu.avif">
+        <h1 class="title">Education</h1>
+      </div>
+
+      <section class="education section">      
+        <div class="education_container bd-grid">
+            <div class="education_content">
+                <div>
+                    <h3 class="education_year">2019-2023</h3>
+                    <span class="education_university">Osmania University</span>
+                </div>
+                <div class="education_time">
+                    <span class="education_rounder"></span>
+                    <span class="education_line"></span>
+                </div>
+                <div>
+                    <span class="education_race">Bachelor of Engineering</span>
+                    <span class="education_specialty">Electronics and Communication Engineering</span>
+                </div>
+            </div>
+        </div>
+    
+        <br>
+        <br>
+    
+        <div class="education_container bd-grid">
+            <div class="education_content">
+                <div>
+                    <h3 class="education_year">2017-2019</h3>
+                    <span class="education_university">Resonance Junior College</span>
+                </div>
+                <div class="education_time">
+                    <span class="education_rounder"></span>
+                    <span class="education_line"></span>
+                </div>
+                <div>
+                    <span class="education_race">Board Of Intermediate</span>
+                    <span class="education_specialty">MPC</span>
+                </div>
+            </div>
+        </div>
+    
+        <br>
+        <br>
+    
+        <div class="education_container bd-grid">
+            <div class="education_content">
+                <div>
+                    <h3 class="education_year">2016-2017</h3>
+                    <span class="education_university">Gitanjali Vidhayaniketan School</span>
+                </div>
+                <div class="education_time">
+                    <span class="education_rounder"></span>
+                    <span class="education_line"></span>
+                </div>
+                
+                <div>
+                    <span class="education_race">Secondary School Certificate</span>
+                    <span class="education_specialty"></span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+      
+      <div class="arrow">
+        <img
+            src="photos/arrow.png"
+            alt="Arrow icon"
+            id="arrow"
+            class="arrowicon"
+            onclick="scrollToTop()"
+        />
+      </div>
+      
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Capabilities</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="photos/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/bootstrap.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>BootStrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/javascript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/reactjs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJs</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technology</h2>
+            <div class="article-container arc">
+              <article>
+                <img
+                  src="photos/sql.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/nodejs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="photos/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="photos/xtra spicy.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://digajerla-anwesh.github.io/Xtra_Chilli//'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="photos/guess.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://digajerla-anwesh.github.io/Guess_Game/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="photos/wikipedia.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="photos/mail.jpg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="photos/linkedin-icon_488108-5-removebg-preview.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Education</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <!-- <li><a href="#skills">Skills</a></li> -->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
