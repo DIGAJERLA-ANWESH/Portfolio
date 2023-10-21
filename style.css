@@ -71,7 +71,7 @@ a {
 li a{
   transition: .3s;
     opacity: 0;
-    animation: navani 0.2s ease forwards;
+    animation: navani 8s ease forwards;
     animation-delay: calc(0.1s * var(--navAni));
 }
 
