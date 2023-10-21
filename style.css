@@ -72,7 +72,7 @@ li a{
   transition: .3s;
     opacity: 0;
     animation: navani 8s ease forwards;
-    animation-delay: calc(0.1s * var(--navAni));
+    animation-delay: calc(1s * var(--navAni));
 }
 
 a:hover {
