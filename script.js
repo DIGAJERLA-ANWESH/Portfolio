@@ -44,3 +44,26 @@ menuLinks.forEach(function (link) {
     icon.classList.remove("open");
   });
 });
+
+/* =====================================================
+   SHARE WEBSITE
+===================================================== */
+
+function shareWebsite() {
+  if (navigator.share) {
+    navigator.share({
+      title: "My Portfolio",
+      text: "Check out my portfolio!",
+      url: window.location.href,
+    });
+  } else {
+    navigator.clipboard
+      .writeText(window.location.href)
+      .then(function () {
+        alert("Website URL copied!");
+      })
+      .catch(function () {
+        alert("Unable to copy the URL.");
+      });
+  }
+}
